@@ -14,9 +14,9 @@ import androidx.room.RoomDatabase
 
           companion object {
               @Volatile
-              private var INSTANCE: Database? = null
+              private var INSTANCE: DataBase? = null
 
-              fun getDatabase(context: Context): Database {
+              fun getDatabase(context: Context): DataBase {
                   val tempInstance = INSTANCE
                   if (tempInstance != null) {
                       return tempInstance
