@@ -10,7 +10,7 @@ import com.example.myapp2m6.data.local.Item
 import kotlinx.coroutines.launch
 
 
-class ItemsViewModel(application: Application) : AndroidViewModel(application) {
+class ItemViewModel(application: Application) : AndroidViewModel(application) {
     private val repositorio: Repositorio
 
     init {
