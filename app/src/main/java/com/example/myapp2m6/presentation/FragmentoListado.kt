@@ -25,7 +25,6 @@ class FragmentoListado : Fragment() {
         binding =FragmentoListadoBinding.inflate(layoutInflater,container, false)
     initLista()
 
-
         return binding.root
     }
 

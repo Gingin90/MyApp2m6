@@ -1,6 +1,4 @@
 package com.example.myapp2m6.data.local
-
-import android.content.ClipData
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
@@ -25,8 +23,7 @@ import androidx.room.RoomDatabase
                       val instance = Room.databaseBuilder(
                           context.applicationContext,
                           DataBase::class.java,
-                          "database"
-                      ).build()
+                          "database").build()
 
                       INSTANCE = instance
                       return instance
