@@ -10,6 +10,7 @@ import com.example.myapp2m6.R
 import com.example.myapp2m6.databinding.FragmentoListadoBinding
 
 
+
 class FragmentoListado : Fragment() {
     private lateinit var binding : FragmentoListadoBinding
     private val viewModel : ItemViewModel by activityViewModels()
