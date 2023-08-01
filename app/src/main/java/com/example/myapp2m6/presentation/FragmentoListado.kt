@@ -35,7 +35,7 @@ class FragmentoListado : Fragment() {
        }
         binding.rv.adapter=adapter
         binding.btnVolver.setOnClickListener {
-            Navigation.findNavController(requireView()).navigate(R.id.action_fragmentoListado_to_fragmentAgregar2)
+            Navigation.findNavController(requireView()).navigate(R.id.action_fragmentoListado_to_fragmentAgregar)
 
         }
 

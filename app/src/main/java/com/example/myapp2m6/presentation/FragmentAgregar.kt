@@ -29,7 +29,7 @@ class FragmentAgregar : Fragment() {
 
     private fun initListener() {
      binding.btnGuardar.setOnClickListener{
-         Navigation.findNavController(requireView()).navigate(R.id.action_fragmentAgregar_to_fragmentoListado2)
+         Navigation.findNavController(requireView()).navigate(R.id.action_fragmentAgregar_to_fragmentoListado)
 
          val nombre = binding.editTextNombre.toString()
          val cantidad = binding.editTextNombre.toString().toInt()
