@@ -24,4 +24,6 @@ class ItemViewModel(application: Application) : AndroidViewModel(application) {
         val item = Item( nombre, precio, cantidad)
         repositorio.insertItem(item)
     }
-}
+
+    }
+

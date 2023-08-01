@@ -3,19 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/fragmentAgregar">
+    app:startDestination="@id/fragmentoListado">
 
+    <fragment
+        android:id="@+id/fragmentoListado"
+        android:name="com.example.myapp2m6.presentation.FragmentoListado"
+        android:label="fragmento_listado"
+        tools:layout="@layout/fragmento_listado" >
+        <action
+            android:id="@+id/action_fragmentoListado_to_fragmentAgregar2"
+            app:destination="@id/fragmentAgregar" />
+    </fragment>
     <fragment
         android:id="@+id/fragmentAgregar"
         android:name="com.example.myapp2m6.presentation.FragmentAgregar"
         android:label="FragmentAgregar" >
         <action
-            android:id="@+id/action_fragmentAgregar_to_fragmentoListado"
+            android:id="@+id/action_fragmentAgregar_to_fragmentoListado2"
             app:destination="@id/fragmentoListado" />
     </fragment>
-    <fragment
-        android:id="@+id/fragmentoListado"
-        android:name="com.example.myapp2m6.presentation.FragmentoListado"
-        android:label="fragmento_listado"
-        tools:layout="@layout/fragmento_listado" />
 </navigation>
