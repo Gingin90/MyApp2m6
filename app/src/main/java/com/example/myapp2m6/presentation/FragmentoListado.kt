@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import com.example.myapp2m6.R
 import com.example.myapp2m6.databinding.FragmentoListadoBinding
 
@@ -35,7 +36,7 @@ class FragmentoListado : Fragment() {
        }
         binding.rv.adapter=adapter
         binding.btnVolver.setOnClickListener {
-            Navigation.findNavController(requireView()).navigate(R.id.action_fragmentoListado_to_fragmentAgregar)
+            findNavController().navigate(R.id.action_fragmentoListado_to_fragmentAgregar)
 
         }
 

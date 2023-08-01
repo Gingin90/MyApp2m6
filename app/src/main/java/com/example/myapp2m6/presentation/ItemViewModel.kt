@@ -23,7 +23,7 @@ class ItemViewModel(application: Application) : AndroidViewModel(application) {
     fun insertItem(nombre: String, precio: Int, cantidad: Int) = viewModelScope.launch {
         val item = Item( nombre, precio, cantidad)
         repositorio.insertItem(item)
-    }
+       }
 
     }
 

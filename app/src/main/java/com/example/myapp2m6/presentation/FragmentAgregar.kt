@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import com.example.myapp2m6.R
 import com.example.myapp2m6.databinding.FragmentAgregarBinding
 
@@ -29,14 +30,14 @@ class FragmentAgregar : Fragment() {
 
     private fun initListener() {
      binding.btnGuardar.setOnClickListener{
-         Navigation.findNavController(requireView()).navigate(R.id.action_fragmentAgregar_to_fragmentoListado)
 
          val nombre = binding.editTextNombre.toString()
-         val cantidad = binding.editTextNombre.toString().toInt()
-         val precio = binding.editTextNombre.toString().toInt()
-
+         val cantidad = binding.editTextCantidad.toString().toInt()
+         val precio = binding.editTextPrecio.toString().toInt()
          itemViewModel.insertItem(nombre, precio,cantidad)
-     }
+         findNavController().navigate(R.id.action_fragmentAgregar_to_fragmentoListado)
+
+       }
      }
   }
 
